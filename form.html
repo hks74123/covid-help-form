@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill out</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <div class="frm">
+        <h2>Register for Helping</h2>
+        <h4>Create Your account</h4>
+        <div class="sinn">
+            <input type="text" class="name1" name="fst_name" placeholder="First Name">
+            <input type="text" class="name" name="lst_name" placeholder="Last Name">
+            <input type="text" class="hlpnu" name="1sthelp" placeholder="First Helpline">
+            <input type="text" class="hlp2nu" name="2ndhelp" placeholder="Second Helpline">
+
+            <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" class="form-control"
+                required></select>
+            <select id="state" class="form-control" required></select>
+            <script language="javascript">print_state("sts");</script>
+        </div>
+            <div class="fitem">
+                <label for="field">Help type(Can be multiple):</label>
+                <div id="field">
+                    <input type="checkbox" name="field1" value="v">
+                    <label for="field1">vehicle</label><br>
+                    <input type="checkbox" name="field2" value="Car">
+                    <label for="field2">food</label><br>
+                    <input type="checkbox" name="field3" value="Boat" checked>
+                    <label for="field3">hospital info</label><br>
+                    <input type="checkbox" name="field4" value="Bike">
+                    <label for="field4">medicines</label><br>
+                    <input type="checkbox" name="field5" value="Car">
+                    <label for="field5">vaccination</label><br>
+                    <input type="checkbox" name="field6" value="Boat" checked>
+                    <label for="field6">non covid diseases</label><br>
+                </div>
+            </div>
+        <button id="regg">Register</button>
+    </div>
+</body>
+
+</html>
